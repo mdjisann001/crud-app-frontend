@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import ContactsPage from "../pages/ContactPage";
@@ -9,7 +9,7 @@ import CreateEmpPage from "../pages/CreateEmpPage";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import EditEmpPage from "../pages/EditEmpPage";
 
-export const myRoutes = createBrowserRouter([
+export const myRoutes = createHashRouter([
   {
     path: "/",
     element: <HomePage />,
